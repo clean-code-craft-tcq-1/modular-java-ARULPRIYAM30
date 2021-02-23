@@ -1,20 +1,14 @@
 package com.colorcoder;
 
 public class Main {
-
-    static void testNumberToPair(int pairNumber,
-        MajorColor expectedMajor,
-        MinorColor expectedMinor)
+    static void testNumberToPair(int pairNumber,MajorColor expectedMajor,MinorColor expectedMinor)
     {
         ColorPair colorPair = Exchange.GetColorFromPairNumber(pairNumber);
         System.out.println("Got pair " + colorPair.ToString());
         assert(colorPair.getMajor() == expectedMajor);
         assert(colorPair.getMinor() == expectedMinor);
     }
-    static void testPairToNumber(
-        MajorColor major,
-        MinorColor minor,
-        int expectedPairNumber)
+    static void testPairToNumber(MajorColor major, MinorColor minor,int expectedPairNumber)
     {
         int pairNumber = Exchange.GetPairNumberFromColor(major, minor);
         System.out.println("Got pair number " + pairNumber);
