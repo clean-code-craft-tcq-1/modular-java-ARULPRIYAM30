@@ -1,4 +1,4 @@
-package com.colorcoder;
+package colorcoder;
 
 public class Main {
     static void testNumberToPair(int pairNumber,MajorColor expectedMajor,MinorColor expectedMinor)
