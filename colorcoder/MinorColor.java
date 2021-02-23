@@ -1,4 +1,4 @@
-package com.colorcoder;
+package colorcoder;
 
 public enum MinorColor implements Color{
     BLUE(0),
