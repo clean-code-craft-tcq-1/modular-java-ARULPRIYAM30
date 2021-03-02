@@ -1,6 +1,6 @@
 package colorcoder;
 
-public class Exchange {
+public class PairColorCode {
 	
 	static ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
