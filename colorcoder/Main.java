@@ -3,21 +3,21 @@ package colorcoder;
 public class Main {
     static void testNumberToPair(int pairNumber,MajorColor expectedMajor,MinorColor expectedMinor)
     {
-        ColorPair colorPair = ColorCoder.GetColorFromPairNumber(pairNumber);
+        ColorPair colorPair = PairColorCode.GetColorFromPairNumber(pairNumber);
         System.out.println("Got pair " + colorPair.ToString());
         assert(colorPair.getMajor() == expectedMajor);
         assert(colorPair.getMinor() == expectedMinor);
     }
     static void testPairToNumber(MajorColor major, MinorColor minor,int expectedPairNumber)
     {
-        int pairNumber = ColorCoder.GetPairNumberFromColor(major, minor);
+        int pairNumber = PairColorCode.GetPairNumberFromColor(major, minor);
         System.out.println("Got pair number " + pairNumber);
         assert(pairNumber == expectedPairNumber);
     }
     public String toString() {
     	String Manual="";
     	for(int i=1; i<=25; i++) {
-    		Manual += i + " " + ColorCoder.GetColorFromPairNumber(i).ToString()+"\n";
+    		Manual += i + " " + PairColorCode.GetColorFromPairNumber(i).ToString()+"\n";
     	}
     	return Manual;
     }
