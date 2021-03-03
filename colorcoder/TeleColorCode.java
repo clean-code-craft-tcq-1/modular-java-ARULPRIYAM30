@@ -1,6 +1,6 @@
 package colorcoder;
 
-public class Main {
+public class TeleColorCode {
     static void testNumberToPair(int pairNumber,MajorColor expectedMajor,MinorColor expectedMinor)
     {
         ColorPair colorPair = PairColorCode.GetColorFromPairNumber(pairNumber);
